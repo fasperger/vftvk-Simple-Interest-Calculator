@@ -29,6 +29,6 @@ function checkAmount()
         fname.focus();
         return false;
     }
-    return true;
+
 }
         
