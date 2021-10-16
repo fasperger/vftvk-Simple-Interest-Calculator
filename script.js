@@ -23,9 +23,9 @@ function updateRate()
 
 function checkdata()
 {
-    var principal = document.getElementById("principal").value;
-    if(principal <= 0){
-        alert("Please enter a positive value, greater than zero.")
+    var principal = document.getElementById("principal");
+    if(parseInt(principal.value) <= 0){
+        alert("Please enter a positive value, greater than zero.");
         fname.focus();
     }
 
