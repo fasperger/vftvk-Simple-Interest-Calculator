@@ -1,10 +1,9 @@
 function checkdata()
 {
-    var principal = document.getElementById("principal");
-    
-    if(principal.value <= 0){
+    var amount_data = document.getElementById("principal"); 
+    if(amount_data.value <= 0){
         alert("Please enter a positive value, greater than zero.");
-        principal.focus();
+        amount_data.focus();
         return false;
     }
     return true;
