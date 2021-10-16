@@ -1,3 +1,15 @@
+function checkdata()
+{
+    var principal = document.getElementById("principal");
+    
+    if(principal.value <= 0){
+        alert("Please enter a positive value, greater than zero.");
+        principal.focus();
+        return false;
+    }
+    return true;
+}
+
 function compute()
 {
     var principal = document.getElementById("principal").value;
@@ -21,14 +33,5 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
 
-function checkdata()
-{
-    var principal = document.getElementById("principal");
-    if(principal.value <= 0){
-        alert("Please enter a positive value, greater than zero.");
-        fname.focus();
-        return false;
-    }
-    return true;
-}
+
         
