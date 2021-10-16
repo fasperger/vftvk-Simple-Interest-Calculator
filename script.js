@@ -21,7 +21,7 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
 
-function checkAmount()
+function checkdata()
 {
     var principal = document.getElementById("principal").value;
     if(principal <= 0){
