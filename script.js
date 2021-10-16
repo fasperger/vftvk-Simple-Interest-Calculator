@@ -24,10 +24,11 @@ function updateRate()
 function checkdata()
 {
     var principal = document.getElementById("principal");
-    if(parseInt(principal.value) <= 0){
+    if(principal.value <= 0){
         alert("Please enter a positive value, greater than zero.");
         fname.focus();
+        return false;
     }
-
+    return true;
 }
         
