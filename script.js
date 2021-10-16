@@ -1,12 +1,7 @@
 function checkdata()
 {
     var amount_data = document.getElementById("principal"); 
-    if(amount_data.value <= 0){
-        alert("Please enter a positive value, greater than zero.");
-        amount_data.focus();
-        return false;
-    }
-    return true;
+    
 }
 
 function compute()
@@ -19,11 +14,19 @@ function compute()
 
     var year = new Date().getFullYear()+parseInt(years);
 
-    document.getElementById("interest").innerHTML=interest;
+    if(principal <= 0){
+        alert("Please enter a positive value, greater than zero.");
+        amount_data.focus();
+        return false;
+    }
+    else {
+        document.getElementById("interest").innerHTML=interest;
+        document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>, \
+        <br\>at an interest rate of <mark>"+rate+"%</mark>.\<br\>You will receive an amount of <mark>"+amount+"</mark>,\
+        <br\>in the year <mark>"+year+"</mark>\<br\>"
+    }
+
     
-    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>, \
-    <br\>at an interest rate of <mark>"+rate+"%</mark>.\<br\>You will receive an amount of <mark>"+amount+"</mark>,\
-    <br\>in the year <mark>"+year+"</mark>\<br\>"
 }
 
 function updateRate()
