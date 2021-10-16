@@ -9,43 +9,37 @@
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-            <form>
-                <label for="amount">Amount: </label> 
-                <input type="number"  id="principal" name="amount">
-                <br>
-                <label for="rate">Rate: </label> 
-                <input onchange="updateRate()" type="range"  id="rate" name="rate" min="1" max="20" step="0.25" value="10.25">  
-                <span id="rate_val">
-                    10.25%
-                </span>
-                <br>
-                <label for="years">No. of Years: </label> 
-                <select id="years" name="years">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-                
-                <button onclick="compute()">Compute Interest</button>
-            </form>
+            Amount: <input type="number"  id="principal" name="amount">
             <br>
-                <label>Interest: </label>
-                <span id="interest"></span>
-                <br>
-                <br>
-                <span id="result"></span>
-            <footer>
-                <br>
-                &#169; This calculator belongs to Franz Asperger
-            </footer>
+            Rate:  <input onchange="updateRate()" type="range"  id="rate" name="rate" min="1" max="20" step="0.25" value="10.25">  
+            <span id="rate_val">10.25%</span>
+            <br>
+            No. of Years:
+            <select id="years" name="years">
+                <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+            </select>
+            Interest: <span id="interest"></span>
+            <br>
+            <br>
+            <span id="result"></span>
+                
+            <button onclick="compute()">Compute Interest</button>
+                
         </div>
+        
+        <footer>
+            <br>
+            &#169; This calculator belongs to Franz Asperger
+        </footer>
         
     </body>
 </html>
