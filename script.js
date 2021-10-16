@@ -27,7 +27,6 @@ function checkAmount()
     if(principal <= 0){
         alert("Please enter a positive value, greater than zero.")
         fname.focus();
-        return false;
     }
 
 }
