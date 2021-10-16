@@ -1,9 +1,3 @@
-function checkdata()
-{
-    var amount_data = document.getElementById("principal"); 
-    
-}
-
 function compute()
 {
     var principal = document.getElementById("principal").value;
@@ -16,7 +10,7 @@ function compute()
 
     if(principal <= 0){
         alert("Please enter a positive value, greater than zero.");
-        amount_data.focus();
+        principal.focus();
         return false;
     }
     else {
@@ -24,9 +18,7 @@ function compute()
         document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>, \
         <br\>at an interest rate of <mark>"+rate+"%</mark>.\<br\>You will receive an amount of <mark>"+amount+"</mark>,\
         <br\>in the year <mark>"+year+"</mark>\<br\>"
-    }
-
-    
+    }   
 }
 
 function updateRate()
