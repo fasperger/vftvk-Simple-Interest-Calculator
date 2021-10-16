@@ -20,4 +20,14 @@ function updateRate()
     var rateval = document.getElementById("rate").value+"%";
     document.getElementById("rate_val").innerText=rateval;
 }
+
+function checkAmount()
+{
+    var principal = document.getElementById("principal").value;
+    if(principal <= 0){
+        alert("Please enter a positive value, greater than zero.")
+        fname.focus();
+        return false;
+    }
+}
         
