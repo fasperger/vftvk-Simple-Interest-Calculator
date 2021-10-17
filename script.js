@@ -1,6 +1,6 @@
 function compute()
 {
-    var principal = document.getElementById("principal").value;
+    var principal = document.getElementById("principal");
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100;
@@ -8,7 +8,7 @@ function compute()
 
     var year = new Date().getFullYear()+parseInt(years);
 
-    if(principal <= 0){
+    if(principal.value <= 0){
         alert("Please enter a positive value, greater than zero.");
         principal.focus();
         return false;
