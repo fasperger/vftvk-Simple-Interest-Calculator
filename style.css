@@ -17,9 +17,8 @@ h1{
     border-radius: 25px;
     align: center; 
 }
-input{
-    float: right;
-    clear: both;
+label{
+    width: 200px;
 }
 
 
