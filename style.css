@@ -18,7 +18,8 @@ h1{
     align: center; 
 }
 input{
-    align: left;
+    float: right;
+    clear: both;
 }
 
 
