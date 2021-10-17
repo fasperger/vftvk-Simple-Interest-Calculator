@@ -11,14 +11,14 @@
             <h1>Simple Interest Calculator</h1>
             <br>
             <form>
-                Amount: <input type="number"  id="principal" name="amount">
+                <label for="principal">Amount: </label><input type="number"  id="principal" name="principal">
                 <br>
                 <br>
-                Rate:  <input onchange="updateRate()" type="range"  id="rate" name="rate" min="1" max="20" step="0.25" value="10.25">  
+                <label for="rate">Rate: </label>  <input onchange="updateRate()" type="range"  id="rate" name="rate" min="1" max="20" step="0.25" value="10.25">  
                 <span id="rate_val">10.25%</span>
                 <br>
                 <br>
-                No. of Years:
+                <label for="years">No. of Years: </label>
                 <select id="years" name="years">
                     <option value="1">1</option>
                     <option value="2">2</option>
