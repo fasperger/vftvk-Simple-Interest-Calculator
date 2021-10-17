@@ -3,8 +3,8 @@ function compute()
     var principal = document.getElementById("principal");
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
-    var interest = principal * years * rate / 100;
-    var amount = parseFloat(principal) + parseFloat(interest);
+    var interest = principal.value * years * rate / 100;
+    var amount = parseFloat(principal.value) + parseFloat(interest);
 
     var year = new Date().getFullYear()+parseInt(years);
 
