@@ -11,7 +11,6 @@ function compute()
     if(principal.value <= 0){
         alert("Please enter a positive value, greater than zero.");
         principal.focus();
-        return false;
     }
     else {
         document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>, \
